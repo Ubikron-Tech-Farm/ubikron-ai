@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ubikron": {
+      "type": "http",
+      "url": "https://deckard.ubikron.com/api/mcp",
+      "headers": { "X-Api-Key": "${user_config.api_key}" }
+    }
+  }
+}

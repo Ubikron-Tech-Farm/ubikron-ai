@@ -1,0 +1,20 @@
+{
+  "name": "ubikron",
+  "displayName": "Ubikron",
+  "version": "1.0.0",
+  "description": "Run OSINT investigations in Ubikron: research people, companies, domains, emails, phone numbers and aliases, run Mimic enrichments, build the graph and write the report, with every page recorded.",
+  "author": {
+    "name": "Vortimo (Pty) Ltd",
+    "url": "https://ubikron.com"
+  },
+  "homepage": "https://ubikron.com/ai/agents",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Ubikron API key",
+      "description": "Your API key from Ubikron. Used to connect to the Ubikron server.",
+      "sensitive": true
+    }
+  },
+  "license": "MIT"
+}

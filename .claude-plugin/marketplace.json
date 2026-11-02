@@ -1,0 +1,15 @@
+{
+  "name": "ubikron",
+  "description": "Ubikron's plugins for Claude: run OSINT investigations in Ubikron.",
+  "owner": {
+    "name": "Vortimo (Pty) Ltd",
+    "url": "https://ubikron.com"
+  },
+  "plugins": [
+    {
+      "name": "ubikron",
+      "source": "./ubikron",
+      "description": "Run OSINT investigations in Ubikron: research people, companies, domains, emails, phone numbers and aliases, run Mimic enrichments, build the graph and write the report, with every page recorded."
+    }
+  ]
+}

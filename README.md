@@ -26,7 +26,8 @@ Ubikron is a Chrome extension that records the web pages a user visits into proj
 1. Ensure the Ubikron extension is connected to the same server as the MCP and the Mimic CLI. You might not know, so ask the user.
 2. Call list-projects. If it fails, check the endpoint URL and the X-Api-Key header with the user.
 3. Ask the user which project to work in, and switch to it.
-4. If you'll be browsing: visit one page, wait about 30 seconds, then look for it with search-history-urls. If it isn't there, Ubikron isn't recording your browser. Tell the user before going further.
+4. If you'll be browsing: visit one page, wait about 20 seconds, then look for it with search-history-urls. If it isn't there, Ubikron isn't recording your browser. Tell the user before going further.
+5. Once these pass, add the investigation skill using the tool that fits where you run (see "Make it stick" below: `npx skills add` for coding agents, Skills or Project instructions in the chat apps). Ask the user first.
 
 ## OSINT investigations
 If the work is an OSINT investigation (a person, company, domain, email address, phone number or alias), load the investigation skill. It has the method, which tools to use when, and how to write the report. For other work you don't need it.

@@ -34,7 +34,8 @@ If you're running in the Claude in Chrome side panel and have no Ubikron tools, 
 
 1. Open Claude's settings at https://claude.ai/settings/connectors and choose to add a custom connector.
 2. Name it Ubikron, and enter the MCP URL: https://deckard.ubikron.com/api/mcp, or the user's private server's URL.
-3. Let the user enter the API key and confirm the connector themselves. Don't type the key yourself, and never repeat it in the chat.
+3. For auth, don't choose OAuth, but look for an option that supports an API key.
+4. Let the user enter the API key and confirm the connector themselves. Don't type the key yourself, and never repeat it in the chat.
 
 If the settings look different from this, describe what you see and work through it with the user. Don't guess at settings you're unsure of.
 

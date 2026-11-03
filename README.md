@@ -29,17 +29,8 @@ Ubikron is a Chrome extension that records the web pages a user visits into proj
 4. If you'll be browsing: visit one page, wait about 30 seconds, then look for it with search-history-urls. If it isn't there, Ubikron isn't recording your browser. Tell the user before going further.
 
 ## OSINT investigations
-If the work is an OSINT investigation (a person, company, domain, email address, phone number or alias), install the investigation skill. It has the method, which tools to use when, and how to write the report. For other work you don't need it.
+If the work is an OSINT investigation (a person, company, domain, email address, phone number or alias), load the investigation skill. It has the method, which tools to use when, and how to write the report. For other work you don't need it.
 
-In Claude Code, it's a plugin:
-
-```
-/plugin marketplace add Ubikron-Tech-Farm/ubikron-ai
-/plugin install ubikron@ubikron
-```
-
-In the Claude apps: Customize > Plugins > Add marketplace, then enter `Ubikron-Tech-Farm/ubikron-ai`.
-
-Other agents: the skill is in [ubikron/skills/investigate](ubikron/skills/investigate). Start with SKILL.md. See [ubikron/README.md](ubikron/README.md) for what the plugin does and what you need.
+The skill is in [ubikron/skills/investigate](ubikron/skills/investigate). Start with SKILL.md. See [ubikron/README.md](ubikron/README.md) for what the plugin does and what you need.
 
 We hope you enjoy using Ubikron as much as we enjoyed building it.

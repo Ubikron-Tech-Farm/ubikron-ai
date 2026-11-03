@@ -6,16 +6,7 @@ Teaches an AI agent to run an OSINT investigation in Ubikron the way an experien
 
 Ask the agent to investigate a person, company, domain, email address, phone number or alias, or to continue a Ubikron project. It works out whether it's running in a terminal (Claude Code, Codex), in the Claude in Chrome side panel, or in chat without a browser, and adjusts. Before browsing, it checks that Ubikron is recording.
 
-## Install
-
-In Claude Code:
-
-```
-/plugin marketplace add Ubikron-Tech-Farm/ubikron-ai
-/plugin install ubikron@ubikron
-```
-
-On claude.ai: Customize > Plugins > Add marketplace, and paste `https://github.com/Ubikron-Tech-Farm/ubikron-ai`.
+## What you need
 
 You need a Ubikron license and the Ubikron MCP server connected. Setup: https://ubikron.com/ai
 

@@ -11,7 +11,7 @@ Ubikron is a Chrome extension that records the web pages a user visits into proj
 
 ## The MCP
 - Every Ubikron function is available over MCP. Public server: https://deckard.ubikron.com/api/mcp
-- The user makes a key for you in the main settings menu (top right). Send it in a header called X-Api-Key.
+- The user makes a key for you in the main settings menu (top right the section MCP). Send it in a header called X-Api-Key.
 - Keys belong to the user, not a project, so you can reach all their projects. Never write the key into a file or repository.
 - Private servers run the same MCP. Ask the user for the full endpoint URL.
 - In a chat app, use the Ubikron connector the user has set up.
@@ -28,6 +28,15 @@ Ubikron is a Chrome extension that records the web pages a user visits into proj
 3. Ask the user which project to work in, and switch to it.
 4. If you'll be browsing: visit one page, wait about 30 seconds, then look for it with search-history-urls. If it isn't there, Ubikron isn't recording your browser. Tell the user before going further.
 5. Once these pass, add the investigation skill using the tool that fits where you run (see "Make it stick" below: `npx skills add` for coding agents, Skills or Project instructions in the chat apps). Ask the user first.
+
+### No Ubikron tools yet, in Claude in Chrome?
+If you're running in the Claude in Chrome side panel and have no Ubikron tools, the connector isn't set up. Offer to set it up with the user:
+
+1. Open Claude's settings at https://claude.ai/settings/connectors and choose to add a custom connector.
+2. Name it Ubikron, and enter the MCP URL: https://deckard.ubikron.com/api/mcp, or the user's private server's URL.
+3. Let the user enter the API key and confirm the connector themselves. Don't type the key yourself, and never repeat it in the chat.
+
+If the settings look different from this, describe what you see and work through it with the user. Don't guess at settings you're unsure of.
 
 ## OSINT investigations
 If the work is an OSINT investigation (a person, company, domain, email address, phone number or alias), load the investigation skill. It has the method, which tools to use when, and how to write the report. For other work you don't need it.

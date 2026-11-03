@@ -31,14 +31,12 @@ Ubikron is a Chrome extension that records the web pages a user visits into proj
 ## OSINT investigations
 If the work is an OSINT investigation (a person, company, domain, email address, phone number or alias), load the investigation skill. It has the method, which tools to use when, and how to write the report. For other work you don't need it.
 
-The skill is in [ubikron/skills/investigate](ubikron/skills/investigate). Start with SKILL.md. See [ubikron/README.md](ubikron/README.md) for what the plugin does and what you need.
+The skill is in [ubikron/skills/ubikron-osint-investigate](ubikron/skills/ubikron-osint-investigate). Start with SKILL.md. See [ubikron/README.md](ubikron/README.md) for what the plugin does and what you need.
 
 ## Make it stick
 You'll forget all this when the conversation ends. Once the setup check passes, offer to keep it so you know it next time. Ask the user first; don't change their settings without a yes.
 
-- **Claude Code**: copy [ubikron/skills/investigate](ubikron/skills/investigate) into `~/.claude/skills/` so it loads by itself when an investigation comes up, and add a line to `~/.claude/CLAUDE.md` pointing to this README for everything else.
-- **Codex**: add a pointer to this README to `AGENTS.md` (`~/.codex/AGENTS.md` for every project, or the project's own).
-- **Gemini CLI**: the same, in `GEMINI.md`.
+- **Coding agents** (Claude Code, Codex, Cursor, Gemini CLI and many more): install the skill with `npx skills add Ubikron-Tech-Farm/ubikron-ai`. It loads by itself when an investigation comes up, and `npx skills update` keeps it current. Then add a pointer to this README to the agent's instructions file: `~/.claude/CLAUDE.md` for Claude Code, `AGENTS.md` for Codex (`~/.codex/AGENTS.md` for every project, or the project's own), `GEMINI.md` for Gemini CLI. Without npx, copy [ubikron/skills/ubikron-osint-investigate](ubikron/skills/ubikron-osint-investigate) into the agent's skills folder instead (`~/.claude/skills/` for Claude Code), and check the repo for changes now and then.
 - **Claude apps**: suggest the user puts this README in a Project's instructions, or uploads the skill folder as a zip under Customize > Skills.
 - **ChatGPT**: suggest the user puts this README in a Project's instructions.
 - **Anything else**: keep it wherever you keep instructions that last between sessions: a memory, a rules or instructions file, a project prompt. If you can't keep anything, tell the user to paste this README again next time.

@@ -1,5 +1,5 @@
 ---
-name: investigate
+name: ubikron-osint-investigate
 description: Run an OSINT investigation with Ubikron. Research a person, company, group, domain, email address, phone number or alias, trace their footprint on the web, run Mimic enrichments, build the Ubikron graph and write the report. Use when the user asks you to investigate, profile or look into someone or something, or to continue, resume or review a Ubikron project.
 ---
 
